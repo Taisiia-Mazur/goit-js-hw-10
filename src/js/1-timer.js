@@ -89,12 +89,7 @@ function initializeClock() {
 
   userSelectedDate -= 1000;
 
-  if (
-    secondsEl.textContent <= 0 &&
-    minutesEl.textContent <= 0 &&
-    hoursEl.textContent <= 0 &&
-    daysEl.textContent <= 0
-  ) {
+  if (userSelectedDate <=0) {
     clearInterval(timerId);
     btnStartEl.disabled = false;
     inputEl.disabled = false;
