@@ -13,7 +13,6 @@ const secondsEl = document.querySelector('[data-seconds]');
 
 
 
-
 let userSelectedDate = 0;
 let timerId = null;
 let changeDate = null;
@@ -44,7 +43,6 @@ function checkDate(date) {
       timeout: 2000,
       iconUrl: 'https://www.svgrepo.com/show/437366/xmark-circle.svg',
     });
-    btnStartEl.disabled = true;
     return;
   } else {
     btnStartEl.disabled = false;
